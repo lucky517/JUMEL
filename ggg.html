@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            width: 740px;
+            margin: 20px auto;
+        }
+        .log{
+            margin-top:40px;
+            margin-left: 40px;
+        }
+        .content{
+            margin-top:20px;
+            background-color: #fafafa;
+            border: 1px solid #ccc;
+        }
+        .header h4,.shop h4{
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
+        .header h4:nth-child(2),.shop h4:nth-child(2){
+            width: 140px;
+        }
+        .clear{
+            clear:both;
+        }
+        .shop h4{
+            line-height: 100px;
+        }
+        .shop h4 img{
+            width: 100px;
+            height: 100px;
+        }
+        h4 button{
+            padding: 0px 5px;
+        }
+        h4 input{
+            width: 20px;
+        }
+        .footer{
+            border-top:1px solid #ccc;
+        }
+        .top{
+            width: 740px;
+            margin: 20px auto;
+            border:1px solid #ccc;
+            height: 300px;
+        }
+        .top b{
+            display: block;
+            margin-left: 20px;
+            margin-top:10px;
+
+
+        }
+        .top dl{
+            margin-top:20px;
+            float:left;
+            margin-left: 60px;
+            font-size: 12px;
+           position: relative;
+
+           
+        }
+        img{
+            width:121px;
+            height:144px;
+        }
+        
+        .top dl button{
+           position: absolute;
+           top:118px;
+           background-color: red;
+           opacity: 0.7;
+           color:#fff;
+           border:none;
+           text-align: center;
+           width: 105px;
+           display: none;
+          outline:none;
+           
+
+           
+        }
+    </style>
+</head>
+<body>
+    <div class='box'>
+        <div class='header'>
+            <h4><input type="checkbox" name="quan">全选</h4>
+            <h4>商品信息</h4>
+            <h4>数量</h4>
+            <h4>单价</h4>
+            <h4></h4>
+            <h4>金额</h4>
+            <h4>操作</h4>
+            <p class='clear'></p>
+            <div class="log">
+                <input type="checkbox">
+                <span><img src="./images/11.png">聚美优品</span>
+            </div>
+        </div>
+        <div class='content'>
+            <div class='shop' id="ccount">
+                <h4><input type="checkbox" name="xuan"></h4>
+                <h4><img src="./images/11.png"></h4>
+                <h4>
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </h4>
+                <h4>￥<span>21.00</span></h4>
+                <h4></h4>
+                <h4 style="color: red;">￥<span style="color: red;">21.00</span></h4>
+                <h4>
+                    <button>删除</button>
+                </h4>
+                <p class='clear'></p>
+            </div>
+            <div class='shop'>
+                <h4><input type="checkbox" name="xuan"></h4>
+                <h4><img src="./images/11.png"></h4>
+                <h4>
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </h4>
+                <h4>￥<span>23.00</span></h4>
+                <h4></h4>
+                <h4 style="color: red;">￥<span style="color: red;">23.00</span></h4>
+                <h4>
+                    <button>删除</button>
+                </h4>
+                <p class='clear'></p>
+            </div>
+        </div>
+            
+        <div class="footer">
+            <!-- <button>全删</button>
+            <button>增加一行</button> -->
+            店铺合计：<span class="total">0.00</span>
+            <!-- 店铺合计：<span class='shopTotal'>0.00</span> -->
+        </div>
+    
+    <div class="top">
+        <b>买过购物车中商品的用户还买了</b>
+        <!-- <p><img src="images/购物车-当当网_09.jpg"><br>javascript语言精粹<br/>
+            <span style="color: red;">￥41.00</span></p>
+            
+        <p><img src="images/购物车-当当网_06.jpg"><br>javascript语言精粹<br/>
+            <span style="color: red;">￥45.00</span></p>
+            
+        <p><img src="images/购物车-当当网_06.jpg"><br>javascript语言精粹<br/>
+            <span style="color: red;">￥41.00</span></p>
+           
+        <p><img src="images/购物车-当当网_07.jpg"><br>javascript语言精粹<br/>
+            <span style="color: red;">￥42.00</span></p>
+             -->
+             <dl>
+                <dt>
+                    <img src="./images/11.png"/>
+                </dt>
+                <dd>javascript语言精粹</dd>
+                <dd></dd>
+                <dd style="color: red;">￥<span style="color: red;">41.00</span></dd>
+                
+                    <button>添加购物车</button>
+                
+            </dl>
+            <dl>
+                <dt>
+                    <img src="./images/11.png" />
+                </dt>
+                <dd>javascript权威指南</dd>
+                <dd></dd>
+                <dd style="color: red;">￥<span style="color: red;">45.00</span></dd>
+               
+                    <button >添加购物车</button>
+                
+            </dl>
+            <dl>
+                <dt>
+                    <img src="./images/11.png" />
+                </dt>
+                <dd>javascript入门到精通</dd>
+                <dd></dd>
+                <dd style="color: red;">￥<span style="color: red;">46.00</span></dd>
+                
+                    <button >添加购物车</button>
+                
+            </dl>
+            <dl>
+                <dt>
+                    <img src="./images/11.png" />
+                </dt>
+                <dd>javascript高级程序设计</dd>
+                <dd></dd>
+                <dd style="color: red;">￥<span style="color: red;">43.00</span></dd>
+                
+                    <button >添加购物车</button>
+                
+            </dl>
+        
+
+    </div>
+    <script>
+        
+        //获取最大父元素
+        var box=document.querySelector('.box')
+        //获取所有商品
+        var shops=document.getElementsByClassName('shop')
+        //获取所有商品的选中框对象
+        var checkboxs=document.getElementsByName('xuan')
+        var a=4 //代表图片序号
+        //给父元素绑定点击事件
+        box.onclick=function(e){
+            var e = e || window.event
+            //获取点击对象
+            var target=e.target || e.srcElement
+            //判断点击的是否为全选框
+            if(target.name=='quan'){
+                //遍历每一个商品对象
+                for(var i=0;i<shops.length;i++){
+                    //判断当前全选框对象是否被选中
+                    if(target.checked){
+                        shops[i].children[0].children[0].checked=true
+                    }else{
+                        shops[i].children[0].children[0].checked=false
+                    }
+                }  
+                totalPrice()
+                // shopTotal()
+            }
+            //判断点击的是否为+按钮
+            if(target.innerHTML=='+'){
+                //获取数量
+                var val=target.previousElementSibling.value
+                //数量递增
+                val++
+                //在重新把递增的数量赋值给输入框
+                target.previousElementSibling.value=val
+
+                //获取单价
+                var pirce=target.parentNode.nextElementSibling.lastElementChild.innerHTML
+                //计算小计
+                var num=parseInt(val)*parseFloat(pirce)
+                //给小计赋值
+               /* var shop1=target.parentNode.parentNode
+                shop1.children[shop1.children.length-3].lastElementChild.innerHTML=num */
+                target.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.innerHTML=num
+                totalPrice()
+                // shopTotal()
+            }
+            //判断点击对象是否为减号
+            if(target.innerHTML=='-'){
+                var val=target.nextElementSibling.value
+                if(val<=1){
+                    val=1
+                }else{
+                    val--
+                }
+                target.nextElementSibling.value=val
+                //获取单价
+                var pirce=target.parentNode.nextElementSibling.lastElementChild.innerHTML
+                //计算小计
+                var num=parseInt(val)*parseFloat(pirce)
+                //给小计赋值
+                target.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.innerHTML=num
+                totalPrice()
+                // shopTotal()
+            }
+            //删除一行
+            if(target.innerHTML=='删除'){
+               target.parentNode.parentNode.remove() 
+               totalPrice()
+            //    shopTotal()
+            }
+            //全删
+            if(target.innerHTML=='全删'){
+                //遍历所有的选中框对象
+                for(var i=checkboxs.length-1;i>=0;i--){
+                    //判断当前选中框是否被选中
+                    if(checkboxs[i].checked){
+                        checkboxs[i].parentNode.parentNode.remove()
+                    }
+                }
+                totalPrice()
+                // shopTotal()
+            }
+            //点击选中框对象
+            if(target.name=='xuan'){
+               aaa()
+            }
+        }
+        
+            function aaa(){
+                var num=0 //代表选中框被选中的次数
+                //遍历所有商品选中框对象
+                for(var i=0;i<checkboxs.length;i++){
+                        //判断该选中框是否被选中
+                        if(checkboxs[i].checked){
+                        num++
+                    }
+                }
+                //当前被选中的次数是否等于长度
+                if(num==checkboxs.length){
+                    document.querySelector('[name="quan"]').checked=true
+                }else{
+                    document.querySelector('[name="quan"]').checked=false
+                }
+                totalPrice()
+                // shopTotal()
+            }
+
+        //总计
+        function totalPrice(){
+            var total=0  //总价格
+            //遍历所有商品
+            for(var i=0;i<shops.length;i++){
+                //判断当前商品是否被选中
+                if(shops[i].children[0].lastElementChild.checked){
+                    //获取每个商品的小计
+                    var subtotal=shops[i].children[5].lastElementChild.innerHTML
+                    //累加
+                    total+=parseFloat(subtotal)
+                }
+            }
+            //给总计赋值
+            document.querySelector('.total').innerHTML=total
+        }
+        totalPrice()
+        
+
+
+        //获取操作对象.onclick=function()[]
+
+            var dl=document.querySelectorAll("dl")
+   
+            for(var i=0;i<dl.length;i++){
+                dl[i].onclick=btn
+                dl[i].onmouseover=f1
+                dl[i].onmouseout=f2
+        }
+        function f1(){
+            this.lastElementChild.style.display="block"
+        }
+        function f2(){
+            this.lastElementChild.style.display="none"
+        }
+       function btn(){
+    
+        console.log(this)
+
+        var img=this.children[0].children[0].src
+        console.log(this.children[0].children[0].src)
+          var newDiv=document.createElement('div')
+                //给当前对象添加class属性
+                newDiv.className='shop'
+                //给当前对象添加内容
+                newDiv.innerHTML='<h4><input type="checkbox" name="xuan"></h4>'
+                +'<h4><img src="'+img+'"></h4>'
+                +'<h4>'
+                    +'<button>-</button> '
+                    +'<input type="text" value="1"> '
+                    +'<button>+</button>'
+                    +'</h4>'
+                    +'<h4>￥<span>41.00</span></h4>'
+                    +'<h4></h4>'
+                    +'<h4 style="color:red">￥<span style="color:red">41.00</span></h4>'
+                    +'<h4>'
+                        +'<button>删除</button>'
+                        +'</h4>'
+                        +'<p class="clear"></p>'
+                    
+            //获取父节点，该父节点追加新的子元素
+                document.querySelector('.content').appendChild(newDiv)
+    }
+                    
+ 
+    </script>
+</body>
+</html>

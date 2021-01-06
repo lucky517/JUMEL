@@ -415,17 +415,33 @@
     <div class="feedback">
         <a href="#"></a>
     </div>
-     <script>
-         var teo_right=document.querySelector('.nav');
-         var lis=teo_right.children;
-        for(var i=0;i<lis.length;i++){
-            lis[i].onmouseover=function(){
-                this.children[1].style.display='block';
-        }
-        lis[i].onmouseout=function(){
-            this.children[1].style.display='none';
-        }
+    <script src="./jquery1.12.4.min.js"></script>
+    <script>
+       if(localStorage.getItem('name')){
+           $('div').html(localStorage.getItem('name'))
+       } else{
+           location.href="./login.html"
        }
-      </script>
+
+    </script>
+     <script>
+    //      var teo_right=document.querySelector('.nav');
+    //      var lis=teo_right.children;
+    //     for(var i=0;i<lis.length;i++){
+    //         lis[i].onmouseover=function(){
+    //             this.children[1].style.display='block';
+    //     }
+    //     lis[i].onmouseout=function(){
+    //         this.children[1].style.display='none';
+    //     }
+    //    }
+    //    var main1=document.querySelectorAll('.main-1')
+    //    main1.click=function(){
+    //        for(var i=0;i<main1.length;i++){
+    //            main1[i].style=<a href="./yemian.html"></a>
+    //        }
+    //    }
+    
+ </script>
 </body>
 </html>
