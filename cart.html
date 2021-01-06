@@ -16,20 +16,19 @@
         .head{
             height:150px;
             background:white;
+            background:url('http://f0.jmstatic.com/static_cart/dist/20191009_1/images/cart_logo.jpg?v=1') no-repeat 200px ;
         }
-        .head img{
-            margin-left:250px;
-            display: inline-block;
-            line-height: 150px;
-            margin-top:28px;
-        }
+    
         .head a{
             float: left;
             text-decoration:none;
-            margin-top:20px;
+            margin-top:50px;
         }
         .head a:nth-child(2){
-            margin-left: 350px;
+            margin-left: 300px;
+        }
+        .head a:nth-child(1){
+            margin-left:600px;
         }
         .head a:nth-child(3){
             border-right:solid #cccccc 1px;
@@ -54,14 +53,130 @@
             margin-top:20px;
             padding-right:5px;
         }
+        .box{
+            width: 800px;
+            margin: 20px auto;
+            
+        }
+        .log{
+            margin-top:40px;
+            margin-left: 40px;
+        }
+        .content{
+            margin-top:20px;
+            background-color: #fafafa;
+            border: 1px solid #ccc;
+        }
+        .header h4,.shop h4{
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
+        .header h4:nth-child(2),.shop h4:nth-child(2){
+            width:100px;
+        }
+        .clear{
+            clear:both;
+        }
+        .shop{
+            overflow: hidden;
+            width:900px;
+            box-sizing: border-box;
+        }
+        .shop h4{
+            line-height: 100px;
+            text-align: center;
+        }
+        .shop h4:nth-of-type(3){
+            margin-left:100px;
+            margin-top:100px;
+        }
+        .shop h4:nth-of-type(4){
+                 margin-top:100px;
+        }
+        .shop h4:nth-of-type(5){
+                 margin-top:100px;
+        }
+        .shop h4:nth-of-type(6){
+                 margin-top:100px;
+        }
+        .shop h4:nth-of-type(7){
+                 margin-top:100px;
+        }
+        .shop h4 img{
+            width:600px;
+            height:300px;
+            margin-left:-150px;
+            overflow: hidden;
+        }
+        h4 button{
+            padding: 0px 5px;
+            
+        }
+        h4 input{
+            width:40px;
+            text-align: center;
+            border:1px solid #cccccc;
+        }
+        .footer{
+            border-top:1px solid #ccc;
+        }
+        .top{
+            width:1100px;
+            margin:20px auto;
+            border:1px solid #ccc;
+            height:800px;
+            overflow: hidden;
+        }
+        .top b{
+            display: block;
+            margin-left: 20px;
+            margin-top:10px;
+
+
+        }
+        .top dl{
+            margin-top:20px;
+            float:left;
+            margin-left: 60px;
+            font-size:20px;
+           position: relative;
+
+           
+        }
+        img{
+            width:500px;
+            height:300px;
+            margin-left:-100px;
+            overflow: hidden;
+        }
+        
+        .top dl button{
+           position: absolute;
+           left:250px;
+            bottom:5px;
+           background-color: red;
+           opacity: 0.7;
+           color:#fff;
+           border:none;
+           text-align: center;
+           width:145px;
+           height:50px;
+           display: none;
+          outline:none;
+           
+
+           
+        }
+        .header span{
+            margin-left:50px;
+        }
+       
     </style>
    
 </head>
 <body>
     <div class="head">
-        <a href="">
-            <img src="http://f0.jmstatic.com/static_cart/dist/20191009_1/images/cart_logo.jpg?v=1;">
-        </a>
      <a href="javascript: ;">聚美优品欢迎你，</a>
      <a href="javascript: ;">登录</a>
      <a href="javascript: ;">免费注册</a>
@@ -69,12 +184,286 @@
    
     </div>
     <hr/>
-    <div class="count">
-      <a href="javascript: ;">真品防伪码</a>
-      <a href="javascript: ;">7天无理由退货</a>
-      <a href="javascript: ;">美妆满两件或299元包邮</a>
-
-    </div>
+    <div class='box'>
+        <div class='header'>
+            <h4><input type="checkbox" name="quan">全选</h4>
+            <h4>商品信息</h4>
+            <h4>数量</h4>
+            <h4>单价</h4>
+            <h4></h4>
+            <h4>金额</h4>
+            <h4>操作</h4>
+            <p class='clear'></p>
+            <div class="log">
+                <input type="checkbox">
+                <span><img src="http://p3.jmstatic.com/product/004/967/4967028_std/4967028_dx_1000_400.jpg"></span>
+            </div>
+        </div>
+        <div class='content'>
+            <div class='shop' id="ccount">
+                <h4><input type="checkbox" name="xuan"></h4>
+                <h4><img src="http://p4.jmstatic.com/product/005/245/5245624_std/5245624_dx_1000_400.jpg"></h4>
+                <h4>
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </h4>
+                <h4>￥<span>1314.00</span></h4>
+                <h4></h4>
+                <h4 style="color: red;">￥<span style="color: red;">1314.00</span></h4>
+                <h4>
+                    <button>删除</button>
+                </h4>
+                <p class='clear'></p>
+            </div>
+            <div class='shop'>
+                <h4><input type="checkbox" name="xuan"></h4>
+                <h4><img src="http://p3.jmstatic.com/product/005/251/5251378_std/5251378_dx_1000_400.jpg"></h4>
+                <h4>
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </h4>
+                <h4>￥<span>520.00</span></h4>
+                <h4></h4>
+                <h4 style="color: red;">￥<span style="color: red;">520.00</span></h4>
+                <h4>
+                    <button>删除</button>
+                </h4>
+                <p class='clear'></p>
+            </div>
+        </div>
+            
+        <div class="footer">
+            <!-- <button>全删</button>
+            <button>增加一行</button> -->
+            店铺合计：<span class="total">0.00</span>
+            <!-- 店铺合计：<span class='shopTotal'>0.00</span> -->
+        </div>
+    
+    <div class="top">
+        <b>买过购物车中商品的用户还买了</b>
+       
+             <dl>
+                <dt>
+                    <img src="http://p2.jmstatic.com/product/005/229/5229202_std/5229202_dx_1000_400.jpg">
+                </dt>
+                <dd>美白非常好的推荐推荐</dd>
+                <dd></dd>
+                <dd style="color: red;">￥<span style="color: red;">520.00</span></dd>
+                
+                    <button>添加购物车</button>
+                
+            </dl>
+            <dl>
+                <dt>
+                    <img src="http://p2.jmstatic.com/product/005/237/5237212_std/5237212_dx_1000_400.jpg" />
+                </dt>
+                <dd>主播:美白非常好的推荐</dd>
+                <dd></dd>
+                <dd style="color: red;">￥<span style="color: red;">520.00</span></dd>
+               
+                    <button >添加购物车</button>
+                
+            </dl>
+            <dl>
+                <dt>
+                    <img src="http://p4.jmstatic.com/product/004/771/4771534_std/4771534_dx_1000_400.jpg" />
+                </dt>
+                <dd>完美:美白非常好的推荐推荐</dd>
+                <dd></dd>
+                <dd style="color: red;">￥<span style="color: red;">520.00</span></dd>
+                
+                    <button >添加购物车</button>
+                
+            </dl>
+            <dl>
+                <dt>
+                    <img src="http://p2.jmstatic.com/product/004/816/4816812_std/4816812_dx_1000_400.jpg" />
+                </dt>
+                <dd>完美：美白非常好的推荐</dd>
+                <dd></dd>
+                <dd style="color: red;">￥<span style="color: red;">520.00</span></dd>
+                
+                    <button >添加购物车</button>
+                
+            </dl>
+        </div>
+        <script>
+            
+            //获取最大父元素
+            var box=document.querySelector('.box')
+            //获取所有商品
+            var shops=document.getElementsByClassName('shop')
+            //获取所有商品的选中框对象
+            var checkboxs=document.getElementsByName('xuan')
+            var a=4 //代表图片序号
+            //给父元素绑定点击事件
+            box.onclick=function(e){
+                var e = e || window.event
+                //获取点击对象
+                var target=e.target || e.srcElement
+                //判断点击的是否为全选框
+                if(target.name=='quan'){
+                    //遍历每一个商品对象
+                    for(var i=0;i<shops.length;i++){
+                        //判断当前全选框对象是否被选中
+                        if(target.checked){
+                            shops[i].children[0].children[0].checked=true
+                        }else{
+                            shops[i].children[0].children[0].checked=false
+                        }
+                    }  
+                    totalPrice()
+                    // shopTotal()
+                }
+                //判断点击的是否为+按钮
+                if(target.innerHTML=='+'){
+                    //获取数量
+                    var val=target.previousElementSibling.value
+                    //数量递增
+                    val++
+                    //在重新把递增的数量赋值给输入框
+                    target.previousElementSibling.value=val
+    
+                    //获取单价
+                    var pirce=target.parentNode.nextElementSibling.lastElementChild.innerHTML
+                    //计算小计
+                    var num=parseInt(val)*parseFloat(pirce)
+                    //给小计赋值
+                   /* var shop1=target.parentNode.parentNode
+                    shop1.children[shop1.children.length-3].lastElementChild.innerHTML=num */
+                    target.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.innerHTML=num
+                    totalPrice()
+                    // shopTotal()
+                }
+                //判断点击对象是否为减号
+                if(target.innerHTML=='-'){
+                    var val=target.nextElementSibling.value
+                    if(val<=1){
+                        val=1
+                    }else{
+                        val--
+                    }
+                    target.nextElementSibling.value=val
+                    //获取单价
+                    var pirce=target.parentNode.nextElementSibling.lastElementChild.innerHTML
+                    //计算小计
+                    var num=parseInt(val)*parseFloat(pirce)
+                    //给小计赋值
+                    target.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.lastElementChild.innerHTML=num
+                    totalPrice()
+                    // shopTotal()
+                }
+                //删除一行
+                if(target.innerHTML=='删除'){
+                   target.parentNode.parentNode.remove() 
+                   totalPrice()
+                //    shopTotal()
+                }
+                //全删
+                if(target.innerHTML=='全删'){
+                    //遍历所有的选中框对象
+                    for(var i=checkboxs.length-1;i>=0;i--){
+                        //判断当前选中框是否被选中
+                        if(checkboxs[i].checked){
+                            checkboxs[i].parentNode.parentNode.remove()
+                        }
+                    }
+                    totalPrice()
+                    // shopTotal()
+                }
+                //点击选中框对象
+                if(target.name=='xuan'){
+                   aaa()
+                }
+            }
+            
+                function aaa(){
+                    var num=0 //代表选中框被选中的次数
+                    //遍历所有商品选中框对象
+                    for(var i=0;i<checkboxs.length;i++){
+                            //判断该选中框是否被选中
+                            if(checkboxs[i].checked){
+                            num++
+                        }
+                    }
+                    //当前被选中的次数是否等于长度
+                    if(num==checkboxs.length){
+                        document.querySelector('[name="quan"]').checked=true
+                    }else{
+                        document.querySelector('[name="quan"]').checked=false
+                    }
+                    totalPrice()
+                    // shopTotal()
+                }
+    
+            //总计
+            function totalPrice(){
+                var total=0  //总价格
+                //遍历所有商品
+                for(var i=0;i<shops.length;i++){
+                    //判断当前商品是否被选中
+                    if(shops[i].children[0].lastElementChild.checked){
+                        //获取每个商品的小计
+                        var subtotal=shops[i].children[5].lastElementChild.innerHTML
+                        //累加
+                        total+=parseFloat(subtotal)
+                    }
+                }
+                //给总计赋值
+                document.querySelector('.total').innerHTML=total
+            }
+            totalPrice()
+            
+    
+    
+            //获取操作对象.onclick=function()[]
+    
+                var dl=document.querySelectorAll("dl")
+       
+                for(var i=0;i<dl.length;i++){
+                    dl[i].onclick=btn
+                    dl[i].onmouseover=f1
+                    dl[i].onmouseout=f2
+            }
+            function f1(){
+                this.lastElementChild.style.display="block"
+            }
+            function f2(){
+                this.lastElementChild.style.display="none"
+            }
+           function btn(){
+        
+            console.log(this)
+    
+            var img=this.children[0].children[0].src
+            console.log(this.children[0].children[0].src)
+              var newDiv=document.createElement('div')
+                    //给当前对象添加class属性
+                    newDiv.className='shop'
+                    //给当前对象添加内容
+                    newDiv.innerHTML='<h4><input type="checkbox" name="xuan"></h4>'
+                    +'<h4><img src="'+img+'"></h4>'
+                    +'<h4>'
+                        +'<button>-</button> '
+                        +'<input type="text" value="1"> '
+                        +'<button>+</button>'
+                        +'</h4>'
+                        +'<h4>￥<span>41.00</span></h4>'
+                        +'<h4></h4>'
+                        +'<h4 style="color:red">￥<span style="color:red">41.00</span></h4>'
+                        +'<h4>'
+                            +'<button>删除</button>'
+                            +'</h4>'
+                            +'<p class="clear"></p>'
+                        
+                //获取父节点，该父节点追加新的子元素
+                    document.querySelector('.content').appendChild(newDiv)
+        }
+                        
+     
+        </script>
     
 </body>
 </html>
