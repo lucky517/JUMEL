@@ -240,8 +240,10 @@
 }
 .nav .li1{
     position: relative;
+   
 }
 .li1>ul{
+    display:none;
     position: absolute;
     background:#cccccc;
     color:white;
@@ -255,8 +257,8 @@
         
           <ul>
               <li><a href="#">欢迎来聚美！</a></li>
-              <li><a href="dlu.html">请登录</a></li>
-              <li><a href="dlu.html">快速注册</a></li>
+              <li><a href="./login.html">请登录</a></li>
+              <li><a href="./login.html">快速注册</a></li>
           </ul>
         </div>
           <div class="teo-right">
@@ -416,12 +418,19 @@
         </div>
     </div> 
 
-    <div class="feedback">
-        <a href="#"></a>
-    </div>
+    <script src="./jquery1.12.4.min.js"></script>
+    <!-- <script>
+       if(localStorage.getItem('name')){
+           $('div').html(localStorage.getItem('name'))
+       } else{
+           location.href="./login.html"
+       }
+
+    </script> -->
      <script>
          var teo_right=document.querySelector('.nav');
          var lis=teo_right.children;
+         var main_1=document.querySelectorAll('.main-1')
         for(var i=0;i<lis.length;i++){
             lis[i].onmouseover=function(){
                 this.children[1].style.display='block';
@@ -430,6 +439,12 @@
             this.children[1].style.display='none';
         }
        }
+       
+       main_1.addEventListener('click',function(){
+         for(var i=0;i<main_1.length;i++){
+             console.log(main_1)
+         }
+     });
       </script>
 </body>
 </html>

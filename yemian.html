@@ -218,6 +218,7 @@
     border:none;
 }
 .slideshow{
+    width:1200px;
     height:250px;
     margin-top:30px;
     background:white;
@@ -331,7 +332,73 @@
     margin-left:400px;
     margin-top:50px;
 }
+.box_1{
+            position: relative;
+            width:500px;
+            height:190px;
+            background:red;
+            margin:0 auto;
+           
+        }
+        .box_1 ul{
+            width:600%;
+            position:absolute;
+            top:0;
+            left:0;
+
+        }
+        .box_1 ul li{
+            float:left;
+        }
+       .arrow-1,
+        .arrow-2{
+            display: none;
+            position: absolute;
+            top:50%;
+            margin-top:-20px;
+            width:40px;
+            height:40px;
+            background: #cccccc;
+            text-align: center;
+            line-height: 40px;
+            color:#fff;
+            font-family: 'icomoon';
+            font-size:18px;
+            text-decoration: none;
+            margin-left:5px;
+        }
+        .arrow-2{
+            right:0;
+            margin-right:5px;
+        }
+        .box_1 img{
+            width:500px;
+            height:190px;
+        }
+        .box_1 li{
+            list-style: none;
+        }
+        .circle{
+            position: absolute;
+            bottom:0;
+            left:50px;
+            margin-bottom:50px;
+            margin-left:80px;
+        }
+        .circle li{
+           width:20px;
+           height:20px;
+           border-radius:50%;
+          list-style:none;
+          border:1px solid #cccccc;
+           float: left;
+           margin-left:10px;
+        }
+        .current{
+            background:#cccccc;
+        }
 </style>
+<script src="./js/carousel.js"></script>
 </head>
 <body>
   <div class="nav1">
@@ -357,7 +424,7 @@
     <div class="slogan" >
        <div class="main">
          <img src=".//images/QQ_03.jpg">
-         <a href="">去购物车结算</a>
+         <a href="./cart.html">去购物车结算</a>
        </div>
     </div>
     <div class="main">
@@ -409,13 +476,34 @@
                 <h2>向你推荐</h2>
             <hr/>
             </div>
+            <div class="box_1">
+                <a href="" class="arrow-1">
+                    &lt;
+                </a>
+                <a href="" class="arrow-2">□</a>
+                <ul>
+                    <li><a href="#"><img src="https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg"></a></li>
+                    <li><a href="#"><img src="https://img30.360buyimg.com/pop/s1180x940_jfs/t1/165747/20/153/87370/5fed58c8Eaede7914/dceffb4a35aeb199.jpg.webp"></a></li>
+                    <li><a href="#"><img src="https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg"></a></li>
+                    <li><a href="#"><img src="https://img30.360buyimg.com/pop/s1180x940_jfs/t1/165747/20/153/87370/5fed58c8Eaede7914/dceffb4a35aeb199.jpg.webp"></a></li>
+                    <li><a href="#"><img src="https://aecpm.alicdn.com/simba/img/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg"></a></li>
+    
+                </ul>
+                <ol class="circle">
+                    <li class="current"></li>
+                    
+                </ol>
+            </div>
+        </div>
         </div>
         <div class="det">
            
             <div class="det-1">
             <legend>商品详情</legend>
             </div>
+    <div class="main">
      <div class="det-2">
+    
         <dl>
             <dt>商品名称:  </dt>
             <dd> 非常v以后发c丰田</dd>
@@ -458,7 +546,9 @@
         </dl>
         <img src="http://f0.jmstatic.com/btstatic/pc_static/xf-book.png">
         </div>
+    </div>
        <div class="det-3">
+           <div class="main">
            <img src="http://p12.jmstatic.com/global/image/202004/28/1588038832.255.jpg">
            <img src="http://p12.jmstatic.com/global/image/202004/28/1588038833.9037.jpg">
            <img src="http://p12.jmstatic.com/global/image/202004/28/1588038834.5085.jpg">
@@ -468,6 +558,7 @@
            <img src="http://p12.jmstatic.com/global/image/202004/28/1588038840.6403.jpg">
            <img src="http://mp5.jmstatic.com/jmhtml/pc/3_03_1.jpg">
            <img src="http://mp5.jmstatic.com/jmhtml/api/global_kefu.png">
+        </div>
        </div>
         </div>
     </div>
