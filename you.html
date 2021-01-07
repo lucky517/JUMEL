@@ -334,7 +334,8 @@
 </div>
      
     <div class="main">
-    <div class="main-1"> 
+    <div class="main-1 main2" > 
+        
       <dl>
           <dt><a href="./cart.html">加入购物车</a><img src="http://p1.jmstatic.com/product/005/159/5159066_std/5159066_dx_1000_400.jpg"></dt>
         <dd>很不错的会变成死得很惨出道时间不长的角色</dd>
@@ -419,14 +420,14 @@
     </div> 
 
     <script src="./jquery1.12.4.min.js"></script>
-    <!-- <script>
+    <script>
        if(localStorage.getItem('name')){
            $('div').html(localStorage.getItem('name'))
        } else{
            location.href="./login.html"
        }
 
-    </script> -->
+    </script>
      <script>
          var teo_right=document.querySelector('.nav');
          var lis=teo_right.children;
@@ -440,11 +441,20 @@
         }
        }
        
-       main_1.addEventListener('click',function(){
-         for(var i=0;i<main_1.length;i++){
-             console.log(main_1)
-         }
-     });
+     
+           for(var i=0;i<main_1.length;i++){
+            main_1[i].onclick=function(){
+               
+               location.href='./yemian.html'
+               
+            }
+           
+           }
+          
+          
+           
+        
+   
       </script>
 </body>
 </html>
