@@ -194,18 +194,23 @@
 
 }
   .main-1 a:hover{
-      display: block;
-      width:100px;
-      height:50px;
+     
       background:red;
       color:white;
      
-      line-height: 50px;
   }
   .main-1 a{
+      position: absolute;
+     top:10px;
+     right:0px;
     text-decoration: none;
-    margin-left:300px;
     display: block;
+      width:100px;
+      height:50px;
+      line-height: 50px;
+      text-align: center;
+      background:white;
+      border:1px solid #f1f1f1;
   }
 .main-1 dl{
     overflow: hidden;
@@ -216,9 +221,8 @@
 
 }
 .main-1 img{
-    /* display: block; */
     margin-left:-260px;
-  /* width:862px;height:345px; */
+ 
 }
 .main-1 p{
     padding-top:60px;
@@ -419,15 +423,8 @@
         </div>
     </div> 
 
-    <script src="./jquery1.12.4.min.js"></script>
-    <script>
-       if(localStorage.getItem('name')){
-           $('div').html(localStorage.getItem('name'))
-       } else{
-           location.href="./login.html"
-       }
-
-    </script>
+    
+   
      <script>
          var teo_right=document.querySelector('.nav');
          var lis=teo_right.children;
@@ -456,5 +453,14 @@
         
    
       </script>
+      <!-- <script src="./jquery1.12.4.min.js"></script>
+       <script>
+       if(localStorage.getItem('name')){
+           $('div').html(localStorage.getItem('name'))
+       } else{
+           location.href="./login.html"
+       }
+
+    </script> -->
 </body>
 </html>
